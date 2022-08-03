@@ -1,5 +1,7 @@
 module.exports = (application) => {
     application.get('/', ( req, res) =>{
-        res.send('ROTA ROLANDO');
+       // res.render('index');
+       // express app module file method
+       application.app.controllers.index.home(application, req, res);
     })
 }
